@@ -3,15 +3,84 @@
 This repository assumes familiarity with the [starter repository](https://github.com/spacelift-io/terraform-starter) and core concepts. Basic setup should already be completed.
 This repository focuses solely on terraform and AWS.
 
-## Contents
+## Topics Covered:
 
-- [Runtime Configuration](#runtime-configuration)
-- [AWS Cloud Integration](#aws-cloud-integration)
-- [Private Workers](#private-workers)
-- [Drift Detection](#drift-detection)
-- [Stack Dependencies](#stack-dependencies)
-- [Contexts with Auto Attachment and Hooks](#contexts-with-auto-attachment-and-hooks)
-- [More Complex Policies and Integrating with Security Tools](#more-complex-policies-and-integrating-with-security-tools)
+### Runtime Configuration
+
+<details>
+<summary>Click to expand</summary>
+
+Runtime Configuration allows you to set up and manage configurations that define how your infrastructure is deployed and managed. It helps you control various aspects such as environment variables, command execution, and more.
+
+More information: [Runtime Configuration](https://docs.spacelift.io/concepts/configuration/runtime-configuration/#:~:text=The%20top%20level%20of%20the,using%20this%20source%20code%20repository)
+
+</details>
+
+### AWS Cloud Integration
+
+<details>
+<summary>Click to expand</summary>
+
+AWS Cloud Integration enables you to connect your Spacelift account with your AWS environment, facilitating automated deployments and infrastructure management.
+
+More information: [AWS Cloud Integration](https://docs.spacelift.io/integrations/cloud-providers/aws#amazon-web-services-aws)
+
+</details>
+
+### Private Workers
+
+<details>
+<summary>Click to expand</summary>
+
+Private Workers allow you to run jobs on dedicated, isolated instances within your VPC, enhancing security and compliance.
+
+More information: [Private Workers](https://docs.spacelift.io/concepts/vcs-agent-pools.html#private-workers)
+
+</details>
+
+### Drift Detection
+
+<details>
+<summary>Click to expand</summary>
+
+Drift Detection helps identify changes in your infrastructure that occur outside of your Spacelift configurations, ensuring that your deployed infrastructure remains consistent with your defined state.
+
+More information: [Drift Detection](https://docs.spacelift.io/concepts/stack/drift-detection.html)
+
+</details>
+
+### Stack Dependencies
+
+<details>
+<summary>Click to expand</summary>
+
+Stack Dependencies manage the relationships between different stacks, ensuring that dependencies are respected and resources are provisioned or destroyed in the correct order.
+
+More information: [Stack Dependencies](https://docs.spacelift.io/concepts/stack/stack-dependencies.html)
+
+</details>
+
+### Contexts with Auto Attachment and Hooks
+
+<details>
+<summary>Click to expand</summary>
+
+Contexts allow you to define reusable sets of environment variables and settings that can be automatically attached to stacks. Hooks enable you to run custom scripts or commands at various points in the stack lifecycle.
+
+More information: [Contexts with Auto Attachment and Hooks](https://docs.spacelift.io/concepts/configuration/context.html)
+
+</details>
+
+### More Complex Policies and Integrating with Security Tools
+
+<details>
+<summary>Click to expand</summary>
+
+This section covers advanced policy configurations and the integration of security tools like Checkov to enhance your infrastructure's security posture.
+
+More information: [Integrating Security Tools](https://spacelift.io/blog/integrating-security-tools-with-spacelift#checkov-integration)
+
+</details>
 
 ## Step 1: Fork and Create Stack
 
@@ -154,84 +223,5 @@ More information: [Integrating Security Tools with Spacelift](https://spacelift.
 - Our stack has also created stack-destructors, which handle the execution of destroying the resources on our created stacks first to ensure all resources are destroyed.
 
 More reading: [Ordered Stack Creation and Deletion](https://docs.spacelift.io/concepts/stack/stack-dependencies#ordered-stack-creation-and-deletion)
-
-</details>
-
-## Detailed Sections
-
-### Runtime Configuration
-
-<details>
-<summary>Click to expand</summary>
-
-Runtime Configuration allows you to set up and manage configurations that define how your infrastructure is deployed and managed. It helps you control various aspects such as environment variables, command execution, and more.
-
-More information: [Runtime Configuration](https://docs.spacelift.io/concepts/configuration/runtime-configuration/#:~:text=The%20top%20level%20of%20the,using%20this%20source%20code%20repository)
-
-</details>
-
-### AWS Cloud Integration
-
-<details>
-<summary>Click to expand</summary>
-
-AWS Cloud Integration enables you to connect your Spacelift account with your AWS environment, facilitating automated deployments and infrastructure management.
-
-More information: [AWS Cloud Integration](https://docs.spacelift.io/integrations/cloud-providers/aws#amazon-web-services-aws)
-
-</details>
-
-### Private Workers
-
-<details>
-<summary>Click to expand</summary>
-
-Private Workers allow you to run jobs on dedicated, isolated instances within your VPC, enhancing security and compliance.
-
-More information: [Private Workers](https://docs.spacelift.io/concepts/vcs-agent-pools.html#private-workers)
-
-</details>
-
-### Drift Detection
-
-<details>
-<summary>Click to expand</summary>
-
-Drift Detection helps identify changes in your infrastructure that occur outside of your Spacelift configurations, ensuring that your deployed infrastructure remains consistent with your defined state.
-
-More information: [Drift Detection](https://docs.spacelift.io/concepts/stack/drift-detection.html)
-
-</details>
-
-### Stack Dependencies
-
-<details>
-<summary>Click to expand</summary>
-
-Stack Dependencies manage the relationships between different stacks, ensuring that dependencies are respected and resources are provisioned or destroyed in the correct order.
-
-More information: [Stack Dependencies](https://docs.spacelift.io/concepts/stack/stack-dependencies.html)
-
-</details>
-
-### Contexts with Auto Attachment and Hooks
-
-<details>
-<summary>Click to expand</summary>
-
-Contexts allow you to define reusable sets of environment variables and settings that can be automatically attached to stacks. Hooks enable you to run custom scripts or commands at various points in the stack lifecycle.
-
-More information: [Contexts with Auto Attachment and Hooks](https://docs.spacelift.io/concepts/configuration/context.html)
-
-</details>
-
-### More Complex Policies and Integrating with Security Tools
-
-<details>
-<summary>Click to expand</summary>
-
-This section covers advanced policy configurations and the integration of security tools like Checkov to enhance your infrastructure's security posture.
-
-More information: [Integrating Security Tools](https://spacelift.io/blog/integrating-security-tools-with-spacelift#checkov-integration)
 
 </details>
