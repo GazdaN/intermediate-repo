@@ -6,7 +6,7 @@ This repository focuses solely on terraform and AWS.
 ## Topics Covered:
 
 <details>
-<summary>### Runtime Configuration</summary>
+<summary>Runtime Configuration</summary>
 
 Runtime Configuration allows you to set up and manage configurations that define how your infrastructure is deployed and managed. It helps you control various aspects such as environment variables, command execution, and more.
 
@@ -15,7 +15,7 @@ More information: [Runtime Configuration](https://docs.spacelift.io/concepts/con
 </details>
 
 <details>
-<summary>### AWS Cloud Integration</summary>
+<summary>AWS Cloud Integration</summary>
 
 AWS Cloud Integration enables you to connect your Spacelift account with your AWS environment, facilitating automated deployments and infrastructure management.
 
@@ -24,7 +24,7 @@ More information: [AWS Cloud Integration](https://docs.spacelift.io/integrations
 </details>
 
 <details>
-<summary>### Private Workers</summary>
+<summary>Private Workers</summary>
 
 Private Workers allow you to run jobs on dedicated, isolated instances within your VPC, enhancing security and compliance.
 
@@ -33,7 +33,7 @@ More information: [Private Workers](https://docs.spacelift.io/concepts/vcs-agent
 </details>
 
 <details>
-<summary>### Drift Detection</summary>
+<summary>Drift Detection</summary>
 
 Drift Detection helps identify changes in your infrastructure that occur outside of your Spacelift configurations, ensuring that your deployed infrastructure remains consistent with your defined state.
 
@@ -42,7 +42,7 @@ More information: [Drift Detection](https://docs.spacelift.io/concepts/stack/dri
 </details>
 
 <details>
-<summary>### Stack Dependencies</summary>
+<summary>Stack Dependencies</summary>
 
 Stack Dependencies manage the relationships between different stacks, ensuring that dependencies are respected and resources are provisioned or destroyed in the correct order.
 
@@ -51,7 +51,7 @@ More information: [Stack Dependencies](https://docs.spacelift.io/concepts/stack/
 </details>
 
 <details>
-<summary>### Contexts with Auto Attachment and Hooks</summary>
+<summary>Contexts with Auto Attachment and Hooks</summary>
 
 Contexts allow you to define reusable sets of environment variables and settings that can be automatically attached to stacks. Hooks enable you to run custom scripts or commands at various points in the stack lifecycle.
 
@@ -60,7 +60,7 @@ More information: [Contexts with Auto Attachment and Hooks](https://docs.spaceli
 </details>
 
 <details>
-<summary>### More Complex Policies and Integrating with Security Tools</summary>
+<summary>More Complex Policies and Integrating with Security Tools</summary>
 
 This section covers advanced policy configurations and the integration of security tools like Checkov to enhance your infrastructure's security posture.
 
