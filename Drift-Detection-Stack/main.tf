@@ -9,7 +9,7 @@ output "space_id" {
 resource "spacelift_stack" "drift_detection_example" {
   space_id          = data.spacelift_space_by_path.intermediate-repo.id
   description       = "Provisions a stack with drift detection"
-  name              = "Stack with drift detection enabled"
+  name              = "Stack with drift detection enabled 1234"
   administrative = true
   repository        = "intermediate-repo"
   branch            = "main"
